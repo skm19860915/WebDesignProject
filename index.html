@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- Title -->
+        <title>Spartech</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Responsive Admin Dashboard Template" />
+        <meta name="keywords" content="admin,dashboard" />
+        <meta name="author" content="Steelcoders" />
+        
+        <!-- Styles -->
+        <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/>      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        	
+        <!-- Theme Styles -->
+        <link href="assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="mn-content fixed-sidebar">
+            <header class="navbar-fixed">
+                <nav>
+                    <div id="menu" class="card menu row">
+                        <div class="card-content col s4 m4 l4">
+                            <a href='#'>
+                                <img id="header-logo" src="assets/images/logo.svg" alt="Spartech St. Louis MO USA" />
+                            </a>
+                        </div>
+                        <div class="valign-wrapper card-content col s8 m8 l8" style="justify-content: end;">
+                            <a class='dropdown-button' href='#' data-activates='Markets' data-hover="true" data-constrainwidth="false" data-beloworigin="true">
+                                Markets<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Markets' class='dropdown-content'>
+                                <li><a href="#">Aerospace</a></li>
+                                <li><a href="#">Building & Construction</a></li>
+                                <li><a href="#">Consumer Packaged Goods (CPG)</a></li>
+                                <li><a href="#">Healthcare & Medical</a></li>
+                                <li><a href="#">Industrial</a></li>
+                                <li><a href="#">Signage</a></li>
+                                <li><a href="#">Transportation</a></li>
+                            </ul>
+                            <a class='dropdown-button' href='#' data-activates='Capabilities' data-hover="true" data-constrainwidth="false" data-beloworigin="true">
+                                Capabilities<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Capabilities' class='dropdown-content'>
+                                <li><a href="#">Product Search</a></li>
+                                <li><a href="#">Product Types</a></li>
+                                <li><a href="#">Process Types</a></li>
+                                <li><a href="#">Resin Types</a></li>
+                                <li><a href="#">Product Lines</a></li>
+                                <li><a href="#">Custom Solutions</a></li>
+                            </ul>
+                            <a class='dropdown-button' href='#' data-activates='Commitments' data-hover="true" data-constrainwidth="false" data-beloworigin="true">
+                                Commitments<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Commitments' class='dropdown-content'>
+                                <li><a href="#">Corporate ESG</a></li>
+                                <li><a href="#">Innovation</a></li>
+                                <li><a href="#">Operational Excellence</a></li>
+                                <li><a href="#">Quality Assurance</a></li>
+                                <li><a href="#">Total Safety</a></li>
+                            </ul>
+                            <a class='dropdown-button' href='#' data-activates='Resources' data-hover="true" data-constrainwidth="false" data-beloworigin="true">
+                                Resources<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Resources' class='dropdown-content'>
+                                <li><a href="#">Calculators</a></li>
+                                <li><a href="#">Document Library</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Video Library</a></li>
+                            </ul>
+                            <a class='dropdown-button' href='#' data-activates='Company' data-hover="true" data-constrainwidth="false" data-beloworigin="true">
+                                Company<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Company' class='dropdown-content'>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">News Center</a></li>
+                                <li><a href="#">Spartech Blog</a></li>
+                            </ul>
+                            <a class='dropdown-button' href='#' data-activates='Contact' data-constrainwidth="false" data-hover="true" data-beloworigin="true">
+                                Contact<i class="menu-item material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id='Contact' class='dropdown-content'>
+                                <li><a href="#">Corporate Contacts</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                            <a class='dropdown-button'>
+                                <input id="search" type="search" placeholder="Search" autocomplete="off">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="info" class="row">
+                        <div class="col s12 m12 l4 valign-wrapper">
+                            <a class='dropdown-button white-text' href='#'><i class="fal fa-phone" aria-hidden="true"></i>Phone: (800) 677-4338</a>
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">search</i>Google Site Search</a>
+                        </div>
+                        <div class="col s12 m12 l8 valign-wrapper" style="justify-content: end;">
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">person</i>Admin</a>
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">people</i>Team Portal</a>
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">description</i>Blog</a>
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">help</i>Help & Support</a>
+                            <a class='dropdown-button white-text' href='#'><i class="material-icons">login</i>Sign In</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="parallax-container">
+                <h2 style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; display: flex; align-items: center; justify-content: center; color:white; font-weight:bold;">
+                    Spartech positioning and lead marketing statement
+                </h2>
+                <div class="parallax"><img src="assets/images/banner.jpg"></div>
+            </div>
+            <main id="core" class="mn-inner hidden-fixed-sidebar">
+                <div class="row">
+                    <div class="col l2"></div>
+                    <div class="col s12 m12 l8">
+                        <div class="row">
+                            <div class="col s12">
+                                <br><br><br>
+                                <div class="page-title black-text"><h4>Introduce Spartech's core.</h4></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l4">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-001.jpg" alt="">
+                                        <span class="card-title">Material Science Expertise</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l4">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-002.jpg" alt="">
+                                        <span class="card-title">Manufacturing Process Expertise</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l4">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-003.jpg" alt="">
+                                        <span class="card-title">Demanding End Markets</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <br><br><br><br>
+                                <div class="page-title black-text"><h4>Introduce Spartech's production system.</h4></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-007.jpg" alt="">
+                                        <span class="card-title">Capabilities</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-005.jpg" alt="">
+                                        <span class="card-title">Markets</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-004.jpg" alt="">
+                                        <span class="card-title">Product Search</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-008.jpg" alt="">
+                                        <span class="card-title">Resources</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+            </main>
+            <main id="feature" class="mn-inner hidden-fixed-sidebar">
+                <div class="row">
+                    <div class="col l2"></div>
+                    <div class="col s12 m12 l8">
+                        <div class="row">
+                            <div class="col s12">
+                                <br><div class="page-title white-text"><h4>Spartech feature content to lock in key points.</h4></div>
+                            </div>
+                        </div>
+                        <div class="row feature-item">
+                            <div class="col s12 m6 l6">
+                                <div class="card card card-transparent">
+                                    <div class="card-content">
+                                        <span class="card-title white-text" style="font-size: 24px;">ESG</span>
+                                        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect waves-grey btn white m-b-xs">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <div class="card hoverable">
+                                    <div class="card-image z-depth-5">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-009.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row feature-item">
+                            <div class="col s12 m6 l6">
+                                <div class="card hoverable">
+                                    <div class="card-image z-depth-5">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-011.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <div class="card card card-transparent">
+                                    <div class="card-content">
+                                        <span class="card-title white-text" style="font-size: 24px;">Innovation Center</span>
+                                        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect waves-grey btn white m-b-xs">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row feature-item">
+                            <div class="col s12 m6 l6">
+                                <div class="card card card-transparent">
+                                    <div class="card-content">
+                                        <span class="card-title white-text" style="font-size: 24px;">Operational Excellence Subheadline.</span>
+                                        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect waves-grey btn white m-b-xs">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <div class="card hoverable">
+                                    <div class="card-image z-depth-5">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-010.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+            </main>
+            <main id="blog" class="mn-inner hidden-fixed-sidebar">
+                <div class="row">
+                    <div class="col l2"></div>
+                    <div class="col s12 m12 l8">
+                        <div class="row">
+                            <div class="col s12">
+                                <br><div class="page-title black-text"><h4>Introduce Spartech's thinking. Latest blog posts.</h4></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l8">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-012.jpg" alt="">
+                                        <span class="card-title">Blog Title</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l4">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-012.jpg" alt="">
+                                        <span class="card-title">Blog Title</span>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <img src="https://spartechwebops.azurewebsites.net/images/features/Spartech-feature-012.jpg" alt="">
+                                        <span class="card-title">Blog Title</span>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+            </main>
+            <div class="page-footer">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col l2"></div>
+                    <div class="col l8">
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card card-transparent">
+                                    <div>
+                                        <img id="footer-logo" src="assets/images/logo.svg" />
+                                        <p style="margin-top: 5px;">Spartech, LLC<br>
+                                        11650 Lakeside Crossing Court Maryland Heights, MO 63146 USA<br>
+                                        <i class="material-icons left" style="font-size: 18px; margin-right:2px">phone</i>Phone: <a href="#">(800) 677-4338</a><br>
+                                        <i class="material-icons left" style="font-size: 18px; margin-right:2px">email</i>Email: <a href="#">info@spartech.com</a></p>
+                                        <p style="margin-top: 5px;">
+                                            <a href="#"><span><i class="fa fa-facebook left"></i></span></a>
+                                            <a href="#"><span><i class="fa fa-instagram left"></i></span></a>
+                                            <a href="#"><span><i class="fa fa-linkedin left"></i></span></a>
+                                            <a href="#"><span><i class="fa fa-twitter left"></i></span></a>
+                                            <a href="#"><span><i class="fa fa-youtube"></i></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card card-transparent">
+                                    <div>
+                                        <p>Quick Links</p>
+                                    </div>
+                                    <div style="border-top: 1px solid black;">
+                                        <p>
+                                            <a href="#">Markets</a><br>
+                                            <a href="#">Production</a><br>
+                                            <a href="#">Commitments</a><br>
+                                            <a href="#">Resources</a><br>
+                                            <a href="#">Company</a><br>
+                                            <a href="#">Contact</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card card-transparent">
+                                    <div>
+                                        <p>About Spartech</p>
+                                    </div>
+                                    <div style="border-top: 1px solid black;">
+                                        <p>Spartech provides custom engineered thermoplastic materials and rigid packaging solutions to thermoforming companies, 
+                                            original equipment manufacturers (OEM’s), distributors, and CPG brands.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card card-transparent">
+                                    <div>
+                                        <p>Certifications</p>
+                                    </div>
+                                    <div style="border-top: 1px solid black;">
+                                        <p><img src="https://spartechwebops.azurewebsites.net/images/graphics/ISO-Certification.jpg" style="width: 100%;" /></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+            </div>
+            <div class="page-footer" style="margin-top: -25px; background-color: #03193d; border-top: none;">
+                <div class="row">
+                    <div class="col l2"></div>
+                    <div class="col l8">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card card-transparent" style="margin-bottom: 0rem; margin-top:0rem;">
+                                    <div class="card-content" style="padding-bottom: 0px;">
+                                        <p class="white-text">
+                                            <span>&copy;&nbsp;Spartech LLC {Version 1.2.0 WIP/Development} | All Rights Reserved | </span> 
+                                            <a class="white-text" href="resources-bin/privacy-policy">
+                                                <span>Privacy Policy</span>
+                                            </a> | 
+                                            <a class="white-text" href="resources-bin/terms-of-use">
+                                                <span>Terms of Use</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <script src="assets/plugins/materialize/js/materialize.min.js"></script>
+        <script src="assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/google-code-prettify/prettify.js"></script>
+        <script src="assets/js/alpha.min.js"></script>
+        <script src="assets/js/pages/ui-parallax.js"></script>
+        
+    </body>
+</html>
